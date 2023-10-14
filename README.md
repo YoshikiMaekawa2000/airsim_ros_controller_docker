@@ -9,7 +9,7 @@
      - [Debian](https://docs.docker.com/engine/install/debian/)
      - [Fedora](https://docs.docker.com/engine/install/fedora/)
      - [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-   - Dockerをインストールした後、[Linuxのポストインストール手順](https://docs.docker.com/engine/install/linux-postinstall/)ページの指示に従って、非rootユーザーがDockerコマンドを実行できるように設定してください。このステップは、NVIDIAコンテナツールキットを使用してクラウドレンダリングを実行する際にオーディオサポートを有効にするために必要です[Adam Rehn Docs](https://docs.adamrehn.com/ue4-docker/configuration/linux)。
+   - Dockerをインストールした後、[Linuxのポストインストール手順](https://docs.docker.com/engine/install/linux-postinstall/)ページの指示に従って、非rootユーザーがDockerコマンドを実行できるように設定してください。このステップは、NVIDIAコンテナツールキットを使用してクラウドレンダリングを実行する際にオーディオサポートを有効にするために必要です。
 
 2. **Python 3.6またはそれ以降のバージョンのインストール:**
    - これらのLinuxディストリビューションの古いバージョンでは、デフォルトでPython 3.6がシステムリポジトリに含まれていない場合があります。古いディストリビューションを使用している場合は、新しいバージョンのPythonを提供するコミュニティリポジトリを設定する必要があるかもしれません。
@@ -25,7 +25,7 @@
        ```bash
        sudo dnf install python3 python3-devel python3-pip
        ```
-   - 上記のコマンドにより、Python 3とpip（Pythonのパッケージマネージャ）がインストールされます[Adam Rehn Docs](https://docs.adamrehn.com/ue4-docker/configuration/linux)。
+   - 上記のコマンドにより、Python 3とpip（Pythonのパッケージマネージャ）がインストールされます。
 
 3. **ue4-dockerのインストール:**
    - ue4-docker Pythonパッケージをインストールするには、以下のコマンドを実行します:
@@ -39,7 +39,7 @@
      ```bash
      sudo ue4-docker setup
      ```
-   - 注意: 新しく作成されたファイアウォールルールをホストシステムが再起動した後も保持するには、`iptables-persistent`サービスをインストールする必要があります[Adam Rehn Docs](https://docs.adamrehn.com/ue4-docker/configuration/linux)。
+   - 注意: 新しく作成されたファイアウォールルールをホストシステムが再起動した後も保持するには、`iptables-persistent`サービスをインストールする必要があります。
 
 これらの手順に従って、`ue4-docker`をインストールし、Linuxファイアウォールを適切に設定することで、`ue4-docker`を使用してUnreal Engineのコンテナイメージをビルドおよび実行する準備が整います。
 
