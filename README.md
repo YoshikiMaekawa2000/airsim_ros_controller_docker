@@ -32,7 +32,7 @@
      ```bash
      sudo pip3 install ue4-docker
      ```
-   - このコマンドにより、ue4-dockerがシステムにインストールされます[Adam Rehn Docs](https://docs.adamrehn.com/ue4-docker/configuration/linux)。
+   - このコマンドにより、ue4-dockerがシステムにインストールされます。
 
 4. **Linuxファイアウォールの自動設定:**
    - ホストシステムでアクティブなファイアウォールが実行されており、ポート9876へのアクセスがブロックされている場合（ue4-sourceイメージのビルド中に必要）、このポートへのアクセスを許可するファイアウォールルールを作成する必要があります。`ue4-docker setup`コマンドを使用すると、このシナリオを検出し、適切なファイアウォール設定を自動的に実行します:
