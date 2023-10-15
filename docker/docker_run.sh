@@ -1,4 +1,4 @@
-image_name='airsim_binary'
+image_name='airsim_source'
 tag_name="ubuntu18.04"
 
 docker run \
@@ -7,6 +7,6 @@ docker run \
     --network=host \
     --rm \
     --gpus all \
-    --name "airsim_binary" \
+    --name "airsim_source" \
     $image_name:$tag_name \
     bash

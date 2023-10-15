@@ -1,6 +1,6 @@
 #!/bin/bash
 
-image_name='airsim_binary'
+image_name='airsim_source'
 image_tag='ubuntu18.04'
 
 docker build \
