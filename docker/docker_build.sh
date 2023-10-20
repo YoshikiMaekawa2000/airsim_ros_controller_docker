@@ -1,7 +1,7 @@
 #!/bin/bash
 
 image_name='airsim_source'
-image_tag='ubuntu18.04'
+image_tag='unreal_engine_4.27'
 
 docker build \
     --network=host \
