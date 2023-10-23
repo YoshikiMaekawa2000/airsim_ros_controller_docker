@@ -1,5 +1,5 @@
 image_name='airsim_source'
-tag_name="ubuntu18.04"
+tag_name="unreal_engine_4.27"
 
 docker run \
     --ipc=host \
